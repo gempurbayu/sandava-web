@@ -6,11 +6,12 @@ import Image from "next/image";
 import logo from "@/assets/logo-sandava.png";
 
 // Extended Navigator interface for connection API
-interface NetworkInformation {
+interface NetworkInformation extends EventTarget {
   effectiveType?: "slow-2g" | "2g" | "3g" | "4g";
   downlink?: number;
   rtt?: number;
   saveData?: boolean;
+  onchange?: ((this: NetworkInformation, ev: Event) => void) | null;
 }
 
 interface NavigatorWithConnection extends Navigator {
