@@ -51,7 +51,7 @@ export default function ContactPage() {
       {/* Contact Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-1 gap-16 max-w-2xl mx-auto">
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold mb-2">How can we help you?</h2>
@@ -276,99 +276,6 @@ export default function ContactPage() {
               </form>
             </div>
 
-            
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold mb-2">Contact Information</h2>
-                <p className="text-slate-600">
-                  Reach out to us through any of these channels.
-                </p>
-              </div>
-              
-              <div className="space-y-6">
-                <Card className="border-2 border-brand-100 hover:border-brand-300 transition-colors">
-                  <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-brand-600" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold mb-1">Office Address</h3>
-                      <p className="text-slate-600 text-sm">
-                        Jl. Sudirman No. 123<br />
-                        Jakarta Selatan, DKI Jakarta 12190<br />
-                        Indonesia
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-                
-                <Card className="border-2 border-brand-100 hover:border-brand-300 transition-colors">
-                  <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-brand-600" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold mb-1">Email</h3>
-                      <p className="text-slate-600 text-sm">
-                        General: business@sandava.co.id<br />
-                        Sales: business@sandava.co.id<br />
-                        Support: business@sandava.co.id
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-                
-                <Card className="border-2 border-brand-100 hover:border-brand-300 transition-colors">
-                  <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-brand-600" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold mb-1">Phone</h3>
-                      <p className="text-slate-600 text-sm">
-                        Office: +62 21 xxxx xxxx<br />
-                        Hotline: +62 811 xxxx xxxx
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-                
-                <Card className="border-2 border-brand-100 hover:border-brand-300 transition-colors">
-                  <CardContent className="p-6 flex items-start gap-4">
-                    <div className="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-brand-600" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold mb-1">Business Hours</h3>
-                      <p className="text-slate-600 text-sm">
-                        Monday - Friday: 09:00 - 18:00 WIB<br />
-                        Saturday: 09:00 - 13:00 WIB<br />
-                        Sunday: Closed
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-              
-              {/* Emergency Support */}
-              <div className="bg-brand-50 border border-brand-200 rounded-xl p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-brand-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-brand-900 mb-1">24/7 Security Incident Response</h3>
-                    <p className="text-brand-700 text-sm mb-3">
-                      Experiencing a security breach? Our incident response team is available around the clock.
-                    </p>
-                    <p className="font-bold text-brand-600">
-                      Emergency Hotline: +62 811 xxxx xxxx
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
