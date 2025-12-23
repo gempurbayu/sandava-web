@@ -8,6 +8,7 @@ import BackToTop from "@/components/ui/BackToTop";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Inter } from "next/font/google";
 import logo from "@/assets/logo-sandava.png";
 import logoBca from "@/assets/clients/logo-bca.png";
 import logoBekasi from "@/assets/clients/logo-bekasi.png";
@@ -16,6 +17,8 @@ import logoImeco from "@/assets/clients/logo-imeco.png";
 import logoJih from "@/assets/clients/logo-jih.png";
 import logoUnair from "@/assets/clients/logo-unair.png";
 import logoUny from "@/assets/clients/logo-uny.png";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -729,8 +732,8 @@ export default function Home() {
       <section className="py-24 bg-slate-50 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-200 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-200 rounded-full blur-3xl" />
+          <div className="absolute top-0 z-50 left-1/4 w-96 h-96 bg-brand-200 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 z-50 right-1/4 w-96 h-96 bg-teal-200 rounded-full blur-3xl" />
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -791,6 +794,44 @@ export default function Home() {
                   <div className="h-full bg-gradient-to-r from-violet-600 to-violet-400 rounded-full animate-progress-fill animation-delay-600" style={{ width: "75%" }} />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Feels to Work With Us */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto px-2 sm:px-0 -rotate-1 hover:scale-105 transition-all duration-300 hover:rotate-0">
+            <div className={`${inter.className} relative isolate overflow-hidden bg-gradient-to-b from-white via-white to-slate-50 p-10 shadow-2xl shadow-slate-900/30 ring-1 ring-slate-100`}>
+
+              <h3 className="text-2xl font-bold mb-8">Dear Our Future Partner</h3>
+
+              <div className="space-y-6 text-slate-700 leading-relaxed text-lg">
+                <p>
+                  At Sandava, we help corporates, enterprises, and market-leading teams
+                  strengthen and secure their digital infrastructure.
+                </p>
+                <p>
+                  We do more than provide security assessments. We create comprehensive
+                  cybersecurity solutions that deliver measurable protection. From identifying
+                  vulnerabilities to implementing robust defense systems, our work is designed
+                  to safeguard your business assets.
+                </p>
+                <p>
+                  Our approach combines strategic thinking, enterprise-grade security frameworks,
+                  and proactive threat intelligence to ensure every solution we deliver is
+                  purposeful, scalable, and future-ready.
+                </p>
+                <p>
+                  Whether you need to assess your current security posture, respond to an
+                  incident, or transform your entire security operations, we provide the
+                  expertise, structure, and momentum to make it happen.
+                </p>
+                <p>Let's build the security foundation that makes a real difference for your business.</p>
+              </div>
+
+              <p className="mt-10 font-semibold text-slate-900">The Sandava Team</p>
             </div>
           </div>
         </div>

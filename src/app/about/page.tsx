@@ -48,47 +48,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* How It Feels to Work With Us */}
-      <section className="py-20 bg-slate-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-12 text-center">How It Feels to Work With Us</h2>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg p-10 relative">
-              <div className="absolute -bottom-4 left-4 right-4 h-4 bg-slate-200/50 rounded-b-2xl -z-10" />
-
-              <h3 className="text-3xl font-bold mb-8">Dear Our Future Partner</h3>
-
-              <div className="space-y-6 text-slate-700 leading-relaxed">
-                <p>
-                  At Sandava, we help corporates, enterprises, and market-leading teams
-                  strengthen and secure their digital infrastructure.
-                </p>
-                <p>
-                  We do more than provide security assessments. We create comprehensive
-                  cybersecurity solutions that deliver measurable protection. From identifying
-                  vulnerabilities to implementing robust defense systems, our work is designed
-                  to safeguard your business assets.
-                </p>
-                <p>
-                  Our approach combines strategic thinking, enterprise-grade security frameworks,
-                  and proactive threat intelligence to ensure every solution we deliver is
-                  purposeful, scalable, and future-ready.
-                </p>
-                <p>
-                  Whether you need to assess your current security posture, respond to an
-                  incident, or transform your entire security operations, we provide the
-                  expertise, structure, and momentum to make it happen.
-                </p>
-                <p>Let's build the security foundation that makes a real difference for your business.</p>
-              </div>
-
-              <p className="mt-8 font-bold text-slate-900">The Sandava Team</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
