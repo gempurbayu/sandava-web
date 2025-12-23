@@ -82,7 +82,20 @@
 }
 
 .animate-scroll {
-  animation: scroll 20s linear infinite;
+  animation: scroll 35s linear infinite;
+  will-change: transform;
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 100%;
 }
 
 .animate-scroll:hover {

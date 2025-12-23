@@ -10,18 +10,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import logo from "@/assets/logo-sandava.png";
-import logoBca from "@/assets/clients/logo-bca.png";
-import logoBekasi from "@/assets/clients/logo-bekasi.png";
-import logoDiy from "@/assets/clients/logo-diy.png";
-import logoImeco from "@/assets/clients/logo-imeco.png";
-import logoJih from "@/assets/clients/logo-jih.png";
-import logoUnair from "@/assets/clients/logo-unair.png";
-import logoUny from "@/assets/clients/logo-uny.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const clientLogos = [
+    { src: "/clients/logo-bca.png", alt: "BCA" },
+    { src: "/clients/logo-pgn.png", alt: "PGN" },
+    { src: "/clients/logo-bekasi.png", alt: "Bekasi" },
+    { src: "/clients/logo-diy.png", alt: "DIY" },
+    { src: "/clients/logo-the-energy.png", alt: "The Energy" },
+    { src: "/clients/logo-imeco.png", alt: "Imeco" },
+    { src: "/clients/logo-sinarmas-sekuritas.png", alt: "Sinarmas Sekuritas" },
+    { src: "/clients/logo-jih.png", alt: "JIH" },
+    { src: "/clients/logo-sorik-marapi.png", alt: "Sorik Marapi Geothermal" },
+    { src: "/clients/logo-unair.png", alt: "Unair" },
+    { src: "/clients/logo-uny.png", alt: "UNY" },
+    { src: "/clients/logo-majo.svg", alt: "Majo" },
+  ];
 
   return (
     <div className="min-h-screen bg-white scroll-smooth">
@@ -150,15 +157,6 @@ export default function Home() {
               {/* Dashboard Mockup */}
               <div className="relative rounded-2xl shadow-2xl overflow-hidden border-4 border-slate-200">
                 <div className="bg-gradient-to-br from-slate-50 to-white p-6">
-                  {/* Dashboard Header */}
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                      <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                      <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                    </div>
-                    <div className="text-xs text-slate-500 font-mono">Security Dashboard</div>
-                  </div>
 
                   {/* Stats Grid */}
                   <div className="grid grid-cols-2 gap-4 mb-6">
@@ -214,53 +212,19 @@ export default function Home() {
             TRUSTED BY LEADING ORGANIZATIONS
           </p>
           <div className="relative">
-            <div className="flex animate-scroll">
-              <div className="flex items-center">
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoBca} alt="BCA" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoBekasi} alt="Bekasi" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoDiy} alt="DIY" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoImeco} alt="Imeco" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoJih} alt="JIH" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoUnair} alt="Unair" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoUny} alt="UNY" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-              </div>
-              {/* Duplicate for seamless loop */}
-              <div className="flex items-center">
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoBca} alt="BCA" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoBekasi} alt="Bekasi" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoDiy} alt="DIY" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoImeco} alt="Imeco" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoJih} alt="JIH" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoUnair} alt="Unair" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
-                <div className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
-                  <Image src={logoUny} alt="UNY" className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" height={112} />
-                </div>
+            <div className="marquee">
+              <div className="marquee-track animate-scroll">
+                {[...clientLogos, ...clientLogos].map((logo, idx) => (
+                  <div key={`${logo.alt}-${idx}`} className="w-40 md:w-48 lg:w-56 flex items-center justify-center px-4">
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                      height={112}
+                      width={224}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -375,18 +339,6 @@ export default function Home() {
             {/* Dashboard Mockup - Left Side */}
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden transition-all duration-500 hover:shadow-brand-500/20 hover:-translate-y-2">
               {/* Browser Header */}
-              <div className="bg-slate-100 px-4 py-2 flex items-center gap-4 border-b">
-                <div className="flex items-center gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-400" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                  <div className="w-3 h-3 rounded-full bg-green-400" />
-                </div>
-                <div className="flex-1 flex items-center gap-2">
-                  <div className="text-sm font-semibold text-slate-700">S.</div>
-                  <div className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded">Incident Response</div>
-                </div>
-                <div className="text-xs text-slate-500">⟳ sandava</div>
-              </div>
               
               {/* Dashboard Content */}
               <div className="p-4 bg-white">
@@ -508,19 +460,6 @@ export default function Home() {
             
             {/* Dashboard Mockup - Right Side */}
             <div className="bg-white rounded-xl shadow-2xl overflow-hidden transition-all duration-500 hover:shadow-blue-500/20 hover:-translate-y-2">
-              {/* Browser Header */}
-              <div className="bg-slate-100 px-4 py-2 flex items-center gap-4 border-b">
-                <div className="flex items-center gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-400" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                  <div className="w-3 h-3 rounded-full bg-green-400" />
-                </div>
-                <div className="flex-1 flex items-center gap-2">
-                  <div className="text-sm font-semibold text-slate-700">S.</div>
-                  <div className="bg-teal-600 text-white text-xs px-2 py-0.5 rounded">Vulnerability Detection</div>
-                </div>
-                <div className="text-xs text-slate-500">⟳ sandava</div>
-              </div>
               
               {/* Dashboard Content */}
               <div className="p-4 bg-white">
