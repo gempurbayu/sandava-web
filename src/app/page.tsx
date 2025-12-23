@@ -695,7 +695,7 @@ export default function Home() {
             <div className="group">
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center transition-all duration-500 hover:border-brand-500 hover:shadow-xl hover:shadow-brand-500/10 hover:-translate-y-1">
                 <AnimatedCounter
-                  end={500}
+                  end={20}
                   suffix="+"
                   className="text-6xl md:text-7xl font-bold text-brand-600 mb-3 transition-transform duration-500 group-hover:scale-110"
                 />
@@ -711,12 +711,12 @@ export default function Home() {
             <div className="group">
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center transition-all duration-500 hover:border-teal-500 hover:shadow-xl hover:shadow-teal-500/10 hover:-translate-y-1">
                 <AnimatedCounter
-                  end={200}
+                  end={10}
                   suffix="+"
                   className="text-6xl md:text-7xl font-bold text-teal-600 mb-3 transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="text-lg font-semibold text-slate-900 mb-1">Enterprise Clients</div>
-                <div className="text-sm text-slate-500">Trusted by leading organizations</div>
+                <div className="text-sm text-slate-500">Trusted by 10+ companies and counting</div>
                 <div className="mt-4 w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-teal-600 to-teal-400 rounded-full animate-progress-fill animation-delay-300" style={{ width: "85%" }} />
                 </div>
@@ -727,13 +727,13 @@ export default function Home() {
             <div className="group">
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center transition-all duration-500 hover:border-violet-500 hover:shadow-xl hover:shadow-violet-500/10 hover:-translate-y-1">
                 <AnimatedCounter
-                  end={15}
+                  end={7}
                   suffix="+"
                   duration={1500}
                   className="text-6xl md:text-7xl font-bold text-violet-600 mb-3 transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="text-lg font-semibold text-slate-900 mb-1">Years Experience</div>
-                <div className="text-sm text-slate-500">Industry expertise since 2009</div>
+                <div className="text-sm text-slate-500">Industry expertise since 2018</div>
                 <div className="mt-4 w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-violet-600 to-violet-400 rounded-full animate-progress-fill animation-delay-600" style={{ width: "75%" }} />
                 </div>
