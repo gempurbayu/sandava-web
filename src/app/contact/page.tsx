@@ -311,9 +311,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold mb-1">Email</h3>
                       <p className="text-slate-600 text-sm">
-                        General: info@sandava.co.id<br />
-                        Sales: sales@sandava.co.id<br />
-                        Support: support@sandava.co.id
+                        General: business@sandava.co.id<br />
+                        Sales: business@sandava.co.id<br />
+                        Support: business@sandava.co.id
                       </p>
                     </div>
                   </CardContent>

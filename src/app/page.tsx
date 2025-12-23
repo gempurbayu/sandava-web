@@ -834,7 +834,7 @@ export default function Home() {
               <h3 className="text-white font-semibold mb-4">Contact</h3>
               <ul className="space-y-2 text-sm">
                 <li>Jakarta, Indonesia</li>
-                <li>info@sandava.co.id</li>
+                <li>business@sandava.co.id</li>
                 <li>+62 21 xxxx xxxx</li>
               </ul>
             </div>
