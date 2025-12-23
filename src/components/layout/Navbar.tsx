@@ -25,12 +25,12 @@ export default function Navbar({ activePage = "home" }: NavbarProps) {
   return (
     <nav className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm h-16">
       <div className="container mx-auto px-6 h-full">
-        <div className="flex items-center h-full">
+        <div className="flex items-center h-full justify-between">
           <Link href="/">
             <Image 
               src={logo} 
               alt="Sandava" 
-              className="h-[138px] w-auto" 
+              className="h-32 w-auto" 
               height={138}
               priority
               placeholder="empty"
@@ -55,12 +55,14 @@ export default function Navbar({ activePage = "home" }: NavbarProps) {
           </div>
 
           {/* Contact Us Button - Hide on contact page */}
-          {activePage !== "contact" && (
+          {activePage !== "contact" ? (
             <div className="hidden md:block">
               <Link href="/contact">
                 <Button>Contact Us</Button>
               </Link>
             </div>
+          ) : (
+            <div className="hidden md:block w-[120px]"></div>
           )}
 
           {/* Mobile Menu Button */}

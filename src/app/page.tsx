@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import logo from "@/assets/logo-sandava.png";
+import router from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -145,12 +146,16 @@ export default function Home() {
                 Unified protection for endpoints, cloud workloads, and digital infrastructure.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-lg">
-                  Schedule Consultation
-                </Button>
+                <Link href="/contact">
+                  <Button size="lg" className="text-lg">
+                    Schedule Consultation
+                  </Button>
+                </Link>
+                <Link href="/about">
                 <Button size="lg" variant="outline" className="text-lg">
                   Learn More
                 </Button>
+                </Link>
               </div>
             </div>
             <div className="relative lg:block">
@@ -787,9 +792,11 @@ export default function Home() {
               Get in touch with our cyber security experts for a comprehensive consultation
               and learn how we can protect your organization.
             </p>
-            <Button size="lg" className="bg-white text-brand-600 hover:bg-slate-100 text-lg">
-              Contact Our Team
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-white text-brand-600 hover:bg-slate-100 text-lg">
+                Contact Our Team
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
