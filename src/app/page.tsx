@@ -24,7 +24,7 @@ export default function Home() {
     { src: "/clients/logo-the-energy.png", alt: "The Energy" },
     { src: "/clients/logo-imeco.png", alt: "Imeco" },
     { src: "/clients/logo-sinarmas-sekuritas.png", alt: "Sinarmas Sekuritas" },
-    { src: "/clients/logo-jih.jpeg", alt: "JIH" },
+    { src: "/clients/logo-jih.png", alt: "JIH" },
     { src: "/clients/logo-sorik-marapi.png", alt: "Sorik Marapi Geothermal" },
     { src: "/clients/logo-unair.png", alt: "Unair" },
     { src: "/clients/logo-uny.png", alt: "UNY" },
